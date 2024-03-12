@@ -4,11 +4,11 @@ import java.util.List;
 
 public class Sneaker implements Item{
 
-    String style;
-    String name;
-    Integer sale = 0;
-    Integer ask = 0;
-    Integer bid = 0;
+    private String style;
+    private String name;
+    private Integer sale = 0;
+    private Integer ask = 0;
+    private Integer bid = 0;
 
     public Sneaker(String style, String name) {
 
@@ -58,6 +58,7 @@ public class Sneaker implements Item{
     @Override
     public void add(Offer offer) {
 
+        
     }
 
     @Override

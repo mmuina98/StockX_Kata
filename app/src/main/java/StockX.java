@@ -1,3 +1,4 @@
+import domain.Bid;
 import domain.Item;
 import domain.Sneaker;
 import java.util.List;
@@ -17,13 +18,13 @@ public class StockX {
 
         Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");
         System.out.println(sneaker);
-      /*  System.out.println(Stockx.draw(sneaker));
 
-        *//**
+
+        /**
          * Crear bids
          * y añadirlas a la zapatilla
          * en sus offers.
-         *//*
+         */
 
         Bid bid = new Bid("13", 550);
         sneaker.add(bid);
@@ -31,7 +32,7 @@ public class StockX {
         sneaker.add(new Bid("9.5", 479));
         sneaker.add(new Bid("13", 338));
         sneaker.add(new Bid("9.5", 480));
-
+        /*
         *//**
          * Crear asks
          * y añadirlas a la zapatilla
