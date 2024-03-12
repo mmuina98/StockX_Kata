@@ -17,19 +17,42 @@ public class Sneaker implements Item{
 
     }
 
+    public String getStyle() {
+        return style;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     @Override
     public Integer getBid() {
-        return null;
+        return bid;
     }
 
     @Override
     public Integer getAsk() {
-        return null;
+        return ask;
     }
 
     @Override
     public Integer getSale() {
-        return null;
+        return sale;
+    }
+
+    @Override
+    public void setBid(Integer bid) {
+        this.bid = bid;
+    }
+
+    @Override
+    public void setAsk(Integer ask) {
+        this.ask = ask;
+    }
+
+    @Override
+    public void setSale(Integer sale) {
+        this.sale = sale;
     }
 
     @Override
@@ -43,17 +66,19 @@ public class Sneaker implements Item{
     }
 
     @Override
-    public void setBid(Integer bid) {
+    public String toString() {
+        return
+                "\n\n\t\t" + this.getAsk() + " Buy\t"
+                        + this.getBid() + " Sell \n" +
 
-    }
+                        "\t\t" + " _    _" + "\n" +
+                        "\t\t" + "(_\\__/(,_" + "\n" +
+                        "\t\t" + "| \\ `_////-._" + "\n" +
+                        "\t\t" + "J_/___\"=> __/`\\" + "\n" +
+                        "\t\t" + "|=====;__/___./" + "\n" +
+                        "\t\t" + "\'-\'-\'-\"\"\"\"\"\"\"`" + "\n" +
 
-    @Override
-    public void setAsk(Integer ask) {
-
-    }
-
-    @Override
-    public void setSale(Integer sale) {
-
+                        "\t"  + "\n" +
+                        "\t\tlast sale: " + this.getSale();
     }
 }
